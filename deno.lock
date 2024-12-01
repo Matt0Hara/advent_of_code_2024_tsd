@@ -1,0 +1,37 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@std/assert@1": "1.0.8",
+    "jsr:@std/collections@^1.0.9": "1.0.9",
+    "jsr:@std/internal@^1.0.5": "1.0.5"
+  },
+  "jsr": {
+    "@std/assert@1.0.8": {
+      "integrity": "ebe0bd7eb488ee39686f77003992f389a06c3da1bbd8022184804852b2fa641b",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/collections@1.0.9": {
+      "integrity": "4f58104ead08a04a2199374247f07befe50ba01d9cca8cbb23ab9a0419921e71"
+    },
+    "@std/internal@1.0.5": {
+      "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
+    }
+  },
+  "redirects": {
+    "https://cdn.pika.dev/big.js/^5.2.2": "https://cdn.skypack.dev/big.js@^5.2.2"
+  },
+  "remote": {
+    "https://cdn.skypack.dev/-/big.js@v5.2.2-sUR8fKsGHRxsJyqyvOSP/dist=es2019,mode=imports/optimized/bigjs.js": "b6d8e6af0c1f7bdc7e8cd0890819ecee2dcbb0776ec4089eae281de8ebd7b2bd",
+    "https://cdn.skypack.dev/big.js@^5.2.2": "f74e8935c06af6664d64a5534d1d6db1ab66649df8164696117ab5a1cd10714e",
+    "https://deno.land/x/math@v1.1.0/abs.ts": "d64fe603ae4bb57037f06a1a5004285b99ed016dab6bfcded07c8155efce24b7",
+    "https://deno.land/x/math@v1.1.0/big/mod.ts": "ba561f56a24ecc9f03542693ed0c81166ed0c921f8017d220ec70c963e935509"
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@std/assert@1",
+      "jsr:@std/collections@^1.0.9"
+    ]
+  }
+}
