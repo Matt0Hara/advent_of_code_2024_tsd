@@ -1,3 +1,12 @@
+import * as R from 'npm:remeda'
+
+// const total = R.pipe(
+//   [1,2,3,3,3,3,3,3,3,4,5],
+//   R.unique(),
+//   R.sum()
+// )
+
+
 const [rulesText, updatesText] = Deno.readTextFileSync('input.txt')
   .split("\n\n")
 
@@ -72,10 +81,11 @@ const updateSum = updates.filter((update) => {
   update.fixPages(rules)
   return update.findMiddle()
 }).reduce(
-    (acc, curr) => acc + curr,
-    0
-  )
+  (acc, curr) => acc + curr,
+  0
+)
 
 console.log(updateSum)
+
 
 
