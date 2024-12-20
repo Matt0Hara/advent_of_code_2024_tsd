@@ -34,10 +34,6 @@ const extractButtonInfo = (line: string): ButtonEffects => {
   return {x, y}
 }
 
-type ButtonCounterFunction = {
-  (craneSpec: CraneInfoBucket, numberOfAPresses: number, counters: PrizeSpec): {craneSpec: CraneInfoBucket, numberOfAPresses: number, counters: PrizeSpec}
-}
-
 const extractPriceSpec = (line: string): PrizeSpec => {
   const regex = /=(\d+)/g
 

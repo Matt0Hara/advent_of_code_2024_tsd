@@ -89,7 +89,7 @@ class GuardMap
   }
 
   patrolGuards() {
-    this.guards.forEach((guard, index) => {
+    this.guards.forEach((guard) => {
 
       while (true) {
         const [row, column] = guard.checkMove()

@@ -1,5 +1,3 @@
-import { chunk } from 'npm:lodash.chunk'
-
 class Stone
 {
   constructor(
@@ -50,8 +48,6 @@ class StoneList
 const blinks = [...Array(10).keys()]
 
 const stoneList = new StoneList(Deno.readTextFileSync('example_input.txt'))
-
-let sum = 0
 
 for (const blink of blinks) {
   stoneList.blink()

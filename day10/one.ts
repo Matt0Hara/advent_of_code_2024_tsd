@@ -7,7 +7,6 @@ type direction = 'up' | 'down' | 'left' | 'right'
 
 class PathFinder
 {
-  private validTrailEnds: coordinates[] = []
   private directions: direction[] = ['up', 'down', 'left', 'right']
 
   constructor(
@@ -25,7 +24,7 @@ class PathFinder
     }
   }
 
-  evaluateStep(direction: direction, position: coordinates, map: number[][]) {
+  evaluateStep(direction: direction, position: coordinates) {
     const newPosition = structuredClone(position)
     switch(direction) {
       case "up":

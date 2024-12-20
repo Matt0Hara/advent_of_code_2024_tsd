@@ -1,12 +1,3 @@
-import * as R from 'npm:remeda'
-
-// const total = R.pipe(
-//   [1,2,3,3,3,3,3,3,3,4,5],
-//   R.unique(),
-//   R.sum()
-// )
-
-
 const [rulesText, updatesText] = Deno.readTextFileSync('input.txt')
   .split("\n\n")
 
@@ -38,10 +29,8 @@ class Update
   }
 
   checkRules(rules: Rule[]) {
-    let allGreen = rules.map((r) => r.checkUpdate(this))
+    return rules.map((r) => r.checkUpdate(this))
       .every((v) => !!v)
-
-    return allGreen
   }
 
   fixPages(rules: Rule[]) {

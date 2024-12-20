@@ -1,5 +1,3 @@
-import chunk from 'npm:lodash.chunk'
-
 class Stone
 {
   constructor(

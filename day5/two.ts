@@ -29,10 +29,8 @@ class Update
   }
 
   checkRules(rules: Rule[]) {
-    let allGreen = rules.map((r) => r.checkUpdate(this))
+    return rules.map((r) => r.checkUpdate(this))
       .every((v) => !!v)
-
-    return allGreen
   }
 
   fixPages(rules: Rule[]) {

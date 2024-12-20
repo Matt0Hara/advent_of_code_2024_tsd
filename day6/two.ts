@@ -1,5 +1,3 @@
-import test = Deno.test
-
 enum Orientation {
   UP = '^',
   RIGHT = '>',
