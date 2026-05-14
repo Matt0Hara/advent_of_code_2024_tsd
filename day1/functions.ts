@@ -8,7 +8,7 @@ const parseLists = async (filename: string): Promise<number[][]> => {
 
       result.split("\n").forEach((line: string) => {
         const [val1, val2] = line.split('   ')
-        list1.push(parseInt(val1))
+        list1.p ush(parseInt(val1))
         list2.push(parseInt(val2))
       })
 
